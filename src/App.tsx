@@ -366,7 +366,7 @@ function App() {
           {/* About Us Page */}
           <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 min-h-screen">
             <div className="max-w-7xl mx-auto">
-              <div className="text-center mb-16">
+              <div className="text-center mb-16 animate-fade-in-up">
                 <h1 className="text-5xl font-bold text-white mb-6">About LC Concepts</h1>
                 <p className="text-2xl text-gray-200 max-w-3xl mx-auto">
                   Your trusted partner for professional handyman services in the Lowcountry
@@ -374,8 +374,8 @@ function App() {
               </div>
 
               {/* Our Story */}
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl shadow-lg p-8 md:p-12 mb-12">
-                <h2 className="text-3xl font-bold text-white mb-6">Our Story</h2>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl shadow-lg p-8 md:p-12 mb-12 animate-fade-in-up delay-200 opacity-0">
+                <h2 className="text-3xl font-bold text-white mb-6 animate-glow">Our Story</h2>
                 <p className="text-lg text-gray-100 leading-relaxed mb-4">
                   LC Concepts was founded with a simple mission: to provide exceptional handyman services with integrity, reliability, and craftsmanship. We understand that your home is your most valuable investment, and we treat every project with the care and attention it deserves.
                 </p>
@@ -385,25 +385,25 @@ function App() {
               </div>
 
               {/* Our Values */}
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl shadow-lg p-8 md:p-12">
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl shadow-lg p-8 md:p-12 animate-fade-in-up delay-400 opacity-0">
                 <h2 className="text-3xl font-bold text-white mb-6">Our Values</h2>
                 <div className="grid md:grid-cols-3 gap-8">
-                  <div className="text-center">
-                    <div className="bg-white/20 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <div className="text-center transform hover:scale-105 transition-transform duration-300">
+                    <div className="bg-white/20 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 hover:bg-white/30 transition-colors">
                       <CheckCircle className="h-8 w-8 text-white" />
                     </div>
                     <h3 className="text-xl font-semibold text-white mb-2">Quality</h3>
                     <p className="text-gray-100">We never compromise on the quality of our work or materials.</p>
                   </div>
-                  <div className="text-center">
-                    <div className="bg-white/20 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <div className="text-center transform hover:scale-105 transition-transform duration-300">
+                    <div className="bg-white/20 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 hover:bg-white/30 transition-colors">
                       <Clock className="h-8 w-8 text-white" />
                     </div>
                     <h3 className="text-xl font-semibold text-white mb-2">Reliability</h3>
                     <p className="text-gray-100">On-time service and dependable results you can count on.</p>
                   </div>
-                  <div className="text-center">
-                    <div className="bg-white/20 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <div className="text-center transform hover:scale-105 transition-transform duration-300">
+                    <div className="bg-white/20 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 hover:bg-white/30 transition-colors">
                       <Star className="h-8 w-8 text-white" />
                     </div>
                     <h3 className="text-xl font-semibold text-white mb-2">Excellence</h3>
@@ -413,7 +413,7 @@ function App() {
               </div>
 
               {/* CTA */}
-              <div className="mt-16 text-center">
+              <div className="mt-16 text-center animate-fade-in-up delay-500 opacity-0">
                 <h2 className="text-3xl font-bold text-white mb-6">Ready to Get Started?</h2>
                 <p className="text-xl text-gray-200 mb-8">
                   Let us help you with your next home project
@@ -428,7 +428,7 @@ function App() {
                       element?.scrollIntoView({ behavior: 'smooth' });
                     }, 100);
                   }}
-                  className="inline-block bg-white px-8 py-4 rounded-lg hover:opacity-90 transition-all font-semibold text-lg shadow-lg hover:shadow-xl"
+                  className="inline-block bg-white px-8 py-4 rounded-lg hover:opacity-90 hover:scale-105 transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl"
                   style={{ color: '#02377c' }}
                 >
                   Request a Quote
