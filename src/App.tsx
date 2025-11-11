@@ -85,11 +85,11 @@ function App() {
           <div className="flex justify-between items-center h-20">
             <button onClick={() => setCurrentPage('home')} className="flex items-center space-x-3">
               <img src="/LC_Concepts_LLC_Logo__4_-removebg-preview.png" alt="LC Concepts Logo" className="h-12 w-12" />
-              <span className="text-2xl font-bold text-white">LC Concepts</span>
+              <span className="text-2xl font-bold text-white hidden md:inline">LC Concepts</span>
             </button>
-            <div className="hidden md:flex space-x-8 items-center">
+            <div className="flex space-x-4 md:space-x-8 items-center">
               <button onClick={() => setCurrentPage('about')} className="text-white hover:text-orange-400 transition-colors font-medium">About</button>
-              <a href="#contact" onClick={(e) => { if (currentPage !== 'home') { e.preventDefault(); setCurrentPage('home'); setTimeout(() => { const element = document.getElementById('contact'); element?.scrollIntoView({ behavior: 'smooth' }); }, 100); }}} className="text-white px-6 py-3 rounded-lg hover:opacity-90 transition-all font-semibold shadow-md hover:shadow-lg" style={{ backgroundColor: '#02377c', border: '2px solid white' }}>
+              <a href="#contact" onClick={(e) => { if (currentPage !== 'home') { e.preventDefault(); setCurrentPage('home'); setTimeout(() => { const element = document.getElementById('contact'); element?.scrollIntoView({ behavior: 'smooth' }); }, 100); }}} className="text-white px-4 md:px-6 py-2 md:py-3 rounded-lg hover:opacity-90 transition-all font-semibold shadow-md hover:shadow-lg text-sm md:text-base" style={{ backgroundColor: '#02377c', border: '2px solid white' }}>
                 Get a Quote
               </a>
             </div>
